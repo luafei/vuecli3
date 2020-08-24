@@ -8,7 +8,10 @@
     export default {
         name: "index",
         created() {
-            console.log(``)
+            console.log(`userProfile created`)
+        },
+        destroyed() {
+            console.log('userProfile destory')
         }
     }
 </script>

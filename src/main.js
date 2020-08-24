@@ -4,15 +4,17 @@ import App from './App.vue'
 import store from './store'
 // router
 import router from '@/router'
-
+// 导入element
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
 Vue.use(ElementUI);
+// 导入vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
 
 Vue.config.productionTip = false
 
-console.log('process.env', process.env);
 Vue.prototype.aa = {id: 1, name: 'edwin'};
 
 import Toast from './plugins/toast';
@@ -39,8 +41,5 @@ Vue.filter('capitalize', function (value) {
 new Vue({
     store,
     router,
-    created() {
-        console.log('main.js 组织钩子被调用')
-    },
     render: h => h(App)
 }).$mount('#app')

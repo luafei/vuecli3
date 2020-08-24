@@ -10,6 +10,7 @@ const app = {
     },
     mutations: {
         increment(state, n) {
+            console.log('increment', n)
             state.countA += n
         },
         increment_app(state) {
@@ -17,7 +18,14 @@ const app = {
         }
     },
     actions: {
-
+        actionIncrement({commit}, n) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    commit('increment', n)
+                    resolve({id:1})
+                }, 1000)
+            })
+        }
     }
 }
 

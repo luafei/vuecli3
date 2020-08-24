@@ -1,10 +1,6 @@
 <template>
     <div class="login">
-        <p>login page</p>
-        <button @click="goHome">跳转home页</button>
-        <button @click="goUser(100)">跳转用户页</button>
-        <button @click="goUserProfile(200)">跳转到用户profile</button>
-        <button @click="goUserPosts(200)">跳转到用户posts</button>
+
     </div>
 </template>
 
@@ -19,7 +15,7 @@
                 this.$router.push('home')
             },
             goUser(id) {
-                this.$router.push(`user/${id}`)
+                this.$router.push(`user`)
             },
             goUserProfile(id) {
                 this.$router.push({
@@ -38,14 +34,24 @@
                         sex: 'W'
                     }
                 })
+            },
+            goTab() {
+                this.$router.push({
+                    name: 'tab'
+                })
             }
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="less">
     .login {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        button {
+            color: red;
+        }
     }
 </style>

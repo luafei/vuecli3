@@ -25,6 +25,7 @@
         <p>{{$store.state.app.countA}}</p>
         <button @click="m_add_app">m_add_app</button>
 <!--        <p>{{$store.getters.app.doubleA}}</p>-->
+        <button @click="actionIncrement()">actionIncrement</button>
     </div>
 </template>
 
@@ -79,6 +80,9 @@
             },
             m_add_app() {
                 this.$store.commit('increment', 5)
+            },
+            actionIncrement() {
+                this.$store.dispatch('actionIncrement', 200)
             }
         },
         created() {

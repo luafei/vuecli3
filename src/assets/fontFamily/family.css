@@ -1,0 +1,21 @@
+@font-face {
+    font-family: PingFang-SC;
+    src: url("./PingFang-SC.ttf");
+}
+@font-face {
+    font-family: PingFang-SC-Bold;
+    src: url("./PingFang-SC-Bold.ttf");
+}
+
+@font-face {
+    font-family: DIN-Medium;
+    src: url("./DIN-Medium.otf");
+}
+@font-face {
+    font-family: DIN-Regular;
+    src: url("./DIN-Regular.otf");
+}
+#app .number{
+    font-family: DIN-Regular;
+}
+

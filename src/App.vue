@@ -26,13 +26,16 @@
             HelloWorld,
             treeTest,
             Home
-        },
-        mounted() {
-            console.log('$msg', this.$msg)
         }
     }
 </script>
 
 <style>
     @import "./assets/css/normalize.css";
+
+    /*
+        引入字体库
+     */
+    @import "assets/fontFamily/family.css";
+    @import "assets/iconfont/iconfont.css";
 </style>
