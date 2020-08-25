@@ -8,11 +8,6 @@
     export default {
         name: "index",
         created() {
-            console.log('add 1111111')
-            console.log('add 2222222')
-            console.log('add 3333333')
-            console.log('add 4444444')
-            console.log('add 5555555')
             console.log('views/login/index')
         },
         methods: {
