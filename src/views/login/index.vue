@@ -9,6 +9,7 @@
         name: "index",
         created() {
             console.log('add 1111111')
+            console.log('add 2222222')
             console.log('views/login/index')
         },
         methods: {
