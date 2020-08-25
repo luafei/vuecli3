@@ -8,6 +8,7 @@
     export default {
         name: "index",
         created() {
+            console.log('add 1111111')
             console.log('views/login/index')
         },
         methods: {
