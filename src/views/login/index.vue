@@ -11,7 +11,8 @@
             console.log(1)
             console.log(2)
             console.log(3)
-            console.log('views/login/index')
+            console.log(4)
+            console.log('views/login/index edwin')
         },
         methods: {
             goHome() {
