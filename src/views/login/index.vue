@@ -8,6 +8,7 @@
     export default {
         name: "index",
         created() {
+            console.log(1)
             console.log('views/login/index')
         },
         methods: {
